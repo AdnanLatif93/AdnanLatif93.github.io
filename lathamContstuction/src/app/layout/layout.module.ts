@@ -4,22 +4,25 @@ import { HeroHeaderComponent } from './hero-header/hero-header.component';
 import { HeroContanterComponent } from './hero-contanter/hero-contanter.component';
 import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../material/material.module';
+import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
   declarations: [
     HeroHeaderComponent,
-    HeroContanterComponent
+    HeroContanterComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
   ],
   exports:[
     HeroHeaderComponent,
-    HeroContanterComponent
+    HeroContanterComponent,
+    FooterComponent,
   ]
 
 })
