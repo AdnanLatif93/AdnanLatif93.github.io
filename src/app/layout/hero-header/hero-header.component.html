@@ -1,4 +1,4 @@
-<section class="hero is-primary is-large hero-header-navbar">
+<section class="hero is-primary is-large hero-header-navbar" style="z-index: 3; position: relative">
   <!-- Hero head: will stick at the top -->
   <div class="hero-head">
     <nav class="navbar">
@@ -54,7 +54,7 @@
                       <span class="icon is-small">
                         <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
                       </span>
-                    </button> 
+                    </button>
                   </div>
                 </div>
                 <div class="dropdown-menu" id="dropdown-menu1" role="menu">
@@ -101,16 +101,46 @@
   </div>
 </section>
 <!--container for button-->
-<!-- <section class="hero is-danger is-small">
-  <div class="hero-body">
-    <div class="">
-      <hr>
-      <hr>
-      <section class="css-vars-buttons-container">
-        <div class="css-vars">
-          <button class="large" style="--bg-color:black">X</button>
+<section class="hero is-danger is-small" style="
+height: 130px; background-color: #110f0fc9;
+">
+  <div class="" style="position:relative">
+    <div class="" style="position: relative;">
+      <hr style="margin: 0.5rem 0; background-color: orange; height: 6px;">
+      <hr style="margin: 0.5rem 0; background-color: black; height: 6px;">
+      <div style="position:absolute; top:-150px; left:0; right:0; bottom:0; transform:translate(0%); z-index: 3;">
+        <div fxLayout="row" fxLayoutAlign="space-evenly center">
+          <figure class="button-circle">
+            <img src="../../../assets/button.png" alt="Some Tech Picture" />
+            <figcaption>some text</figcaption>
+          </figure>
+          <figure class="button-circle">
+            <img src="../../../assets/button.png" alt="Some Tech Picture" />
+            <figcaption>some text</figcaption>
+          </figure>
+          <figure class="button-circle">
+            <img src="../../../assets/button.png" alt="Some Tech Picture" />
+            <figcaption>some text</figcaption>
+          </figure>
+          <figure class="button-circle">
+            <img src="../../../assets/button.png" alt="Some Tech Picture" />
+            <figcaption>some text</figcaption>
+          </figure>
         </div>
-      </section>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="space-evenly center"
+        style="    top: -79px;
+       width: 100%;
+        position: absolute;
+        ">
+        <div fxLayout="row" fxLayoutAlign="space-evenly center" style="width: inherit; margin-left: 50px;" >
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      
     </div>
   </div>
-</section> -->
+</section>

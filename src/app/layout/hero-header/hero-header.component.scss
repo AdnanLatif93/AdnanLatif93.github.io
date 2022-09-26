@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
 
-    input[type=text]  {
+    input[type=text] {
         position: relative;
         // padding: 15px 40px 15px 20px;
         padding-bottom: calc(0.5em - 1px);
@@ -53,49 +53,36 @@
     background-size: cover;
 }
 
-.css-vars-buttons-container {
-    :root {
-        --border-s: 0.2rem;
-        --border-m: 0.4rem;
-        --border-l: 0.8rem;
-        --border-xl: 1.5rem;
-    }
+.button-circle {
+    width: 230px;
+    height: 230px;
+    background: #fffa;
+    border-radius: 50%;
+    animation: spin 500s infinite cubic-bezier(0, .25, .75, 1);
+}
 
-    button {
-        width: 4rem;
-        height: 4rem;
-        margin: 2rem;
-        border-radius: 50%;
-        flex-shrink: 0;
-        position: relative;
-        border: none;
-        background-color: #eee;
-        padding: 0.7rem;
-        box-sizing: content-box;
-    }
 
-    .css-vars button {
-        background: var(--bg-color);
-    }
-
-    .css-vars button:before {
-        content: '';
-        border-radius: 50%;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: calc((0.4rem) * -1);
-        left: calc((0.4rem) * -1);
-        padding: 0.4rem;
-        background:
-            linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 30%, transparent 50%, rgba(0, 0, 0, 0.4) 100%),
-            var(--bg-color);
-        z-index: -1;
-    }
-
-    .css-vars button.large:before {
-        top: calc((0.8rem) * -1);
-        left: calc((0.8rem) * -1);
-        padding: 0.8rem;
+@keyframes spin {
+    to {
+        transform: rotateY(4turn);
     }
 }
+
+figure img  {
+    position: relative
+}
+
+figcaption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+}
+.dot {
+    height: 230px;
+    width: 230px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
