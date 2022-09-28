@@ -20,7 +20,8 @@
         letter-spacing: 2px;
         border: none;
         border-radius: 5px;
-        background: linear-gradient(to right, #FFFFFF 0%, #464747 #F9F9F9 100%);
+        background: transparent;
+        // background: linear-gradient(to right, #FFFFFF 0%, #464747 #F9F9F9 100%);
         transition: width 0.4s ease;
         outline: none;
 
@@ -32,7 +33,7 @@
     i {
         position: relative;
         left: -25px;
-        color: #8233C5;
+        color: orange;
     }
 
     .social {
@@ -58,7 +59,7 @@
     height: 230px;
     background: #fffa;
     border-radius: 50%;
-    animation: spin 500s infinite cubic-bezier(0, .25, .75, 1);
+    // animation: spin 500s infinite cubic-bezier(0, .25, .75, 1);
 }
 
 
@@ -72,17 +73,49 @@ figure img  {
     position: relative
 }
 
-figcaption {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    font-weight: bold;
-    transform: translate(-50%, -50%);
-}
+// figcaption {
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     font-weight: bold;
+//     transform: translate(-50%, -50%);
+// }
 .dot {
     height: 230px;
     width: 230px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+  }
+  .button{
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .navbar-item{
+    position: absolute;
+    width: 31%;
+    height: 570%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    align-items: stretch;
+  }
+  .navbar-item img {
+    width: 100%;
+    max-height: 100%;
+    box-shadow: 0 0 18px 22px #000;;
+  }
+  .top-right{
+    position: absolute;
+    top: 50px;
+    left: 40%;
+  }
+  .bottom{
+    position: absolute;
+    top: 35%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 120px;
   }
